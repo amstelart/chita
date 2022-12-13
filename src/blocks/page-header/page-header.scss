@@ -1,0 +1,96 @@
+// В этом файле должны быть стили для БЭМ-блока page-header, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-header {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 20px 0;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: none;
+  transition: all $transition-time;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    .site-name {
+      font-size: 32px;
+      flex: 0 0 65%;
+      max-width: 65%;
+      margin: 0;
+      transition: all $transition-time;
+    }
+
+    .header-call {
+      flex: 0 0 35%;
+      max-width: 35%;
+      display: flex;
+      align-items: center;
+      transition: all $transition-time;
+
+      &__info {
+        flex-grow: 1;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.5;
+        span {
+          display: block;
+          font-size: 12px;
+
+          a {
+            font-size: 18px;
+            color: #000;
+            font-weight: 700;
+          }
+        }
+      }
+
+      &__action {
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  &.shrink {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    margin: 0;
+    // animation: slideInDown  1s 1 ease-in-out;
+    z-index: 10;
+    box-shadow: 0 14px 16px 0 rgba(0, 0, 0, 0.055);
+    transition: all $transition-time;
+
+    .site-name {
+      font-size: 24px;
+    }
+
+    .header-call__info {
+      span {
+        display: none;
+      }
+      .header-call-phone {
+        display: block;
+      }
+    }
+  }
+}
+
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
