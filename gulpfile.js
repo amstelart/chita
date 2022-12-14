@@ -51,7 +51,7 @@ let postCssPlugins = [
     browsers: ['last 2 version']
   }),
   mqpacker({
-    sort: true
+    sort: false
   }),
   atImport(),
   inlineSVG(),

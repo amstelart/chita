@@ -17,13 +17,42 @@
   align-items: center;
   background: #f5f4f6;
 
+  @media (max-width: $screen-lg) {
+    height: auto;
+    min-height: auto;
+    padding-top: 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
   &__text-box {
     flex: 0 0 55%;
     max-width: 55%;
+
+    @media (max-width: $screen-lg) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media (max-width: $screen-sm) {
+      .btn {
+        width: 100%;
+      }
+    }
   }
   &__image-box {
     flex: 0 0 45%;
     max-width: 45%;
+    text-align: center;
+
+    @media (max-width: $screen-lg) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }
 
   &__title {
@@ -40,6 +69,10 @@
 
   &__text {
     font-size: 22px;
+
+    @media (max-width: $screen-lg) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -50,6 +83,10 @@
   background: rgb(244,238,255);
   background: linear-gradient(0deg, rgba(244,238,255,1) 0%, rgba(197,213,255,1) 100%);
 
+  @media (max-width: $screen-lg) {
+    padding: 45px 0;
+  }
+
   h3 {
     max-width: 1035px;
     margin: 0 auto 30px auto;
@@ -59,15 +96,27 @@
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 40px;
+
+    @media (max-width: $screen-lg) {
+      font-size: 18px;
+    }
   }
 }
 
 .scenario {
   padding: 90px 0;
 
+  @media (max-width: $screen-lg) {
+    padding: 45px 0;
+  }
+
   &__title {
     text-align: center;
     margin: 0 0 90px 0;
+
+    @media (max-width: $screen-lg) {
+      margin: 0 0 45px 0;
+    }
   }
 
   &__inner {
@@ -83,6 +132,21 @@
     box-shadow: 0 0 40px 0 rgba(175,175,175,.15);
     padding: 60px 20px;
     border-radius: 6px;
+
+    @media (max-width: $screen-lg) {
+      flex: 0 0 48%;
+      max-width: 48%;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $screen-md) {
+      flex: 0 0 100%;
+      max-width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
   &__step-icon {
     width: 80px;
@@ -134,15 +198,27 @@
   background: #f5f5f5;
   padding: 90px 0;
 
+  @media (max-width: $screen-lg) {
+    padding: 45px 0;
+  }
+
   &__title {
     text-align: center;
     margin: 0 0 60px 0;
+
+    @media (max-width: $screen-lg) {
+      margin: 0 0 45px 0;
+    }
   }
 
   &__inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: $screen-lg) {
+      justify-content: center;
+    }
   }
 
   &__card {
@@ -153,11 +229,26 @@
     display: flex;
     justify-content: center;
     padding: 40px 25px;
+
+    @media (max-width: $screen-lg) {
+      flex: 0 0 100%;
+      max-width: 400px;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__card-inner {
     padding-left: 80px;
     position: relative;
+
+    @media (max-width: $screen-xl) {
+      padding: 80px 0 0 0 ;
+      text-align: center;
+    }
 
     p {
       font-size: 16px;
@@ -169,6 +260,11 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    @media (max-width: $screen-xl) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__card-title {
@@ -183,12 +279,24 @@
   background: #505794;
   color: #fff;
 
+  @media (max-width: $screen-lg) {
+    padding: 45px 0;
+  }
+
   &__title {
     margin: 0 0 90px 0;
     text-align: center;
 
+    @media (max-width: $screen-lg) {
+      margin: 0 0 25px 0;
+    }
+
     span {
       display: block;
+
+      @media (max-width: $screen-lg) {
+        display: inline;
+      }
 
       &:last-child {
         color: #fceb03;
@@ -206,9 +314,20 @@
     max-width: 50%;
     padding-right: 5%;
 
+    @media (max-width: $screen-lg) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
     .lead {
       font-size: 36px;
       line-height: 1.3;
+
+      @media (max-width: $screen-lg) {
+        font-size: 24px;
+        line-height: 1.2;
+      }
+
       span {
         color: #fceb03;
       }
@@ -217,9 +336,28 @@
     ul {
       list-style: none;
       padding: 0;
+      margin-left: 45px;
+
+      @media (max-width: $screen-lg) {
+        margin-left: 0;
+        margin-bottom: 35px;
+      }
 
       li {
-        padding-left: 40px;
+        position: relative;
+        padding-left: 45px;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 4px;
+          left: 0;
+          width: 30px;
+          height: 30px;
+          background-image: url(../img/gift-icon.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
 
         h4 {
           color: #fceb03;
@@ -235,22 +373,39 @@
   &__col-form  {
     flex: 0 0 50%;
     max-width: 50%;
+
+    @media (max-width: $screen-lg) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }
 
   &__form {
+    color: initial;
     display: block;
     background: #fff;
     border-radius: 6px;
     padding: 40px;
-
     height: 540px;
+
+    @media (max-width: $screen-lg) {
+      padding: 30px 25px 30px 25px;
+
+      .btn {
+        width: 100%;
+      }
+    }
   }
 }
 
 
 .ask {
-  padding: 60px 0;
+  padding: 90px 0;
   background: #f5f5f5;
+
+  @media (max-width: $screen-lg) {
+    padding: 45px 0;
+  }
 
   &__inner {
     display: flex;
@@ -261,11 +416,48 @@
   &__col-image {
     flex: 0 0 45%;
     max-width: 45%;
+
+    @media (max-width: $screen-lg) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 1.3;
+
+      @media (max-width: $screen-lg) {
+        font-size: 16px;
+      }
+    }
   }
 
   &__col-form {
     flex: 0 0 45%;
     max-width: 45%;
+
+    @media (max-width: $screen-lg) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    h3 {
+      margin-top: 25px;
+      text-align: center;
+      line-height: 1.25;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .field-actions {
+      .btn {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -273,10 +465,18 @@
   padding: 90px 0;
   background: #fff;
 
+  @media (max-width: $screen-lg) {
+    padding: 45px 0;
+  }
+
   &__title {
     color: #d10404;
     text-align: center;
     margin: 0 0 30px 0;
+
+    @media (max-width: $screen-lg) {
+      margin: 0 0 10px 0;
+    }
   }
 
   &__inner {
@@ -288,11 +488,58 @@
     flex: 0 0 50%;
     max-width: 50%;
     padding-right: 2%;
+    text-align: center;
+
+    @media (max-width: $screen-lg) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-right: 0;
+    }
+
+    h4 {
+      font-size: 30px;
+      text-align: center;
+    }
   }
   &__col-caption {
     flex: 0 0 50%;
     max-width: 50%;
     padding-left: 2%;
+    text-align: center;
+
+    @media (max-width: $screen-lg) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-left: 0;
+    }
+
+    h4 {
+      font-size: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      font-weight: 300;
+      font-size: 22px;
+      li {
+        padding: 4px 0;
+      }
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .lead {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 1.3;
+    }
+
+    .btn {
+      white-space: normal;
+    }
   }
 }
 
@@ -300,6 +547,10 @@
   padding: 90px 0;
   background: #d2ecfa;
   text-align: center;
+
+  @media (max-width: $screen-lg) {
+    padding: 45px 0;
+  }
 
   &__title {
     max-width: 930px;
@@ -309,12 +560,40 @@
   .lead {
     font-size: 24px;
     margin-bottom: 60px;
+
+    @media (max-width: $screen-lg) {
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
   }
 }
 
 .instruction {
   padding: 90px 0;
   background: #505794;
+
+  @media (max-width: $screen-lg) {
+    padding: 45px 0;
+  }
+
+  &__icon {
+    width: 94px;
+    height: 94px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto 15px auto;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 20px;
+    }
+  }
 
   &__title {
     max-width: 1000px;
@@ -324,9 +603,58 @@
   }
 
   &__form {
-    max-width: 460px;
+    max-width: 500px;
     margin: auto;
     display: flex;
+
+    @media (max-width: $screen-lg) {
+      flex-wrap: wrap;
+    }
+
+    .field-text {
+      flex-grow: 1;
+
+      @media (max-width: $screen-lg) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .field-text,
+    .field-actions,
+    .field-actions .btn {
+      margin: 0;
+
+      @media (max-width: $screen-lg) {
+        width: 100%;
+      }
+    }
+
+    .field-text__input-wrap {
+      margin-right: 15px;
+    }
+    .field-text__input {
+      border: none;
+      border-bottom: 1px solid #fff;
+      border-radius: 0;
+      background-color: transparent;
+      padding-left: 0;
+      color: #fff;
+      font-weight: 700;
+      font-size: 15px;
+
+      &::placeholder {
+        color: #fff;
+        font-weight: 700;
+      }
+
+      &:focus {
+        box-shadow: none;
+
+        &::placeholder {
+          opacity: 0;
+        }
+      }
+    }
   }
 }
 
@@ -343,6 +671,11 @@
     font-size: 22px;
     text-align: center;
     margin-bottom: 70px;
+
+    @media (max-width: $screen-lg) {
+      font-size: 18px;
+      margin-bottom: 45px;
+    }
   }
 
   &__inner {
@@ -354,13 +687,33 @@
   &__item {
     flex: 0 0 30%;
     max-width: 30%;
+    counter-increment: step-counter;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin: auto;
+    }
+
+    @media (max-width: $screen-xl) {
+      flex: 0 0 48%;
+      max-width: 48%;
+
+      &:last-child {
+        margin: 0 0 30px 0;
+      }
+    }
+
+    @media (max-width: $screen-md) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }
 }
 
 .stage-card {
   color: #fff;
   background: #505794;
-  padding: 20px;
+  padding: 35px 20px;
   height: 100%;
   border-radius: 6px;
 
@@ -370,11 +723,53 @@
     border-radius: 50%;
     margin: 0 auto 20px auto;
     background: #fceb03;
+    position: relative;
+
+    &::before {
+      content: counter(step-counter);
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 24px;
+      font-weight: 700;
+      color: #505794;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #fceb03;
+    position: relative;
+    margin: 0 auto 20px auto;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 18px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fceb03;
+    margin-bottom: 20px;
   }
 
   ul {
     list-style: none;
     padding: 0;
+    margin-bottom: 25px;
 
     li {
       margin-bottom: 20px;
@@ -396,15 +791,28 @@
       }
     }
   }
+
+  &__action {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 .advantage {
 
   padding: 90px 0;
 
+  @media (max-width: $screen-lg) {
+    padding: 45px 0;
+  }
+
   &__title {
     text-align: center;
     margin: 0 0 60px;
+
+    @media (max-width: $screen-lg) {
+      margin: 0 0 45px;
+    }
   }
 
   &__inner {
@@ -418,6 +826,17 @@
     text-align: center;
     margin-bottom: 40px;
     padding: 20px 25px;
+
+    @media (max-width: $screen-lg) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media (max-width: $screen-sm) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   &__item-icon {
@@ -457,6 +876,10 @@
 
   .lead {
     font-size: 22px;
+
+    @media (max-width: $screen-lg) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -464,9 +887,17 @@
   padding: 90px 0;
   background: #d2ecfa;
 
+  @media (max-width: $screen-lg) {
+    padding: 45px 0;
+  }
+
   &__title {
     text-align: center;
     margin: 0 0 60px 0;
+
+    @media (max-width: $screen-lg) {
+      margin: 0 0 45px 0;
+    }
   }
 
   &__inner {
@@ -484,8 +915,36 @@
 
   &__feedback-form {
     display: flex;
+    align-items: flex-end;
     flex-wrap: wrap;
     max-width: 750px;
     margin: auto;
+
+    @media (max-width: $screen-lg) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .field-text {
+      margin-right: 15px;
+      flex-grow: 1;
+
+      @media (max-width: $screen-lg) {
+        margin-right: 0;
+      }
+    }
+
+    .field-actions {
+      margin: 0;
+      margin-bottom: 1.05769em;
+
+      .btn {
+        margin-bottom: 1px;
+
+        @media (max-width: $screen-lg) {
+          width: 100%;
+        }
+      }
+    }
   }
 }

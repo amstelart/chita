@@ -28,7 +28,7 @@ $body-bg:                     #fff;
 $link-color:                  $color-main;
 $link-color--hover:           darken($color-main, 15%);
 
-$border-color:                $gray-light;
+$border-color:                rgba(27,27,28,.15);
 
 
 
@@ -61,11 +61,17 @@ $screen-lg:                   992px;
 $screen-xl:                   1200px;
 $screen-xxl:                  1800px;
 
-$container-sm:                100%;
-$container-md:                100%;
+// $container-sm:                100%;
+// $container-md:                100%;
+// $container-lg:                $screen-lg - 30;
+// $container-xl:                $screen-xl - 30;
+// $container-xxl:               $screen-xxl - 30;
+
+$container-sm:                480px;
+$container-md:                768px;
 $container-lg:                $screen-lg - 30;
-$container-xl:                $screen-xl - 30;
-$container-xxl:               $screen-xxl - 30;
+$container-xl:                1180px;
+$container-xxl:               1180px;
 
 
 

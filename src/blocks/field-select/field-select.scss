@@ -14,7 +14,7 @@ $border-radius:               3px !default;
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: ($line-height / 2);
+  margin-bottom: ($line-height / 1.3);
 
   &__name {
     @include field-name;
@@ -36,8 +36,8 @@ $border-radius:               3px !default;
     background-color: #fff;
     background-image: svg-load('../blocks/field-select/img_to_bg/select-down.svg');
     background-repeat: no-repeat;
-    background-position: right 0.3em center;
-    background-size: 1.063em 0.688em;
+    background-position: right 15px center;
+    background-size: 10px 6px;
 
     &[multiple] {
       background-image: none;
