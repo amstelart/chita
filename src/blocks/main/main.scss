@@ -948,3 +948,12 @@
     }
   }
 }
+
+
+.quiz-section {
+  padding: 90px 0;
+
+  @media (max-width: $screen-lg) {
+    padding: 60px 0;
+  }
+}

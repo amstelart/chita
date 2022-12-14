@@ -46,7 +46,7 @@ $z-index-modal:               100 !default;
     height: 100%;
 
     @media (min-width: $screen-lg) {
-      width: 600px;
+      width: 460px;
       height: auto;
 
       #{$block-name}--open & {
@@ -63,10 +63,16 @@ $z-index-modal:               100 !default;
     min-height: 100%;
     background-color: #fff;
     outline: 0;
+    padding: 40px 25px;
+
+    @media (min-width: $screen-lg) {
+      padding: 40px;
+      border-radius: 6px;
+    }
   }
 
   &__header {
-    padding: 5px 40px 0 10px;
+    padding: 5px 10px 20px 10px;
     flex-shrink: 0;
   }
 
@@ -77,12 +83,17 @@ $z-index-modal:               100 !default;
     line-height: 1.4;
     font-weight: 700;
     color: currentColor;
+    text-align: center;
   }
 
   &__close {
     position: absolute !important; // stylelint-disable-line  declaration-no-important
-    top: 5px;
-    right: 5px;
+    top: 15px;
+    right: 15px;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__body {
@@ -93,6 +104,11 @@ $z-index-modal:               100 !default;
   &__footer {
     padding: 10px;
     flex-shrink: 0;
+
+    .btn {
+      width: 100%;
+      border-radius: 25px;
+    }
   }
 
   &__backdrop {
@@ -115,6 +131,42 @@ $z-index-modal:               100 !default;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+
+  &--quiz {
+    #{$block-name}__dialog {
+      @media (min-width: $screen-lg) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    #{$block-name}__content {
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: center;
+      border-radius: 0;
+      background: linear-gradient(135deg,#394078 40.02%,#d1c1de 100%);
+    }
+
+    #{$block-name}__close {
+
+      width: 30px;
+      height: 30px;
+
+      > span {
+        &::before,
+        &::after {
+          background: #fff;
+        }
+      }
+    }
+
+    .component-quiz {
+      max-width: 1150px;
+      width: 100%;
+      color: #fff;
     }
   }
 }

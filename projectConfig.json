@@ -60,7 +60,8 @@
     "fields-group": [],
     "tooltip": [],
     "main": [],
-    "accordion-group": []
+    "accordion-group": [],
+    "component-quiz": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
