@@ -79,7 +79,7 @@
                 </div>
               </div>
               <div class="intro__image-box">
-                <img src="img/intro-img.jpg" alt>
+                <img src="img/intro-img.png" alt>
               </div>
             </div>
           </div>
@@ -184,6 +184,45 @@
               </div>
               <div class="express-calculator__col-form">
                 <form action class="express-calculator__form">
+                  <label class="field-select">
+                    <div class="field-select__name">Сумма задолжности</div>
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id name>
+                        <option>от 250 тыс. до 500 000 руб.</option>
+                        <option>Более 1 млн. руб.</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="field-select">
+                    <div class="field-select__name">У вас есть просрочки по кредиту?</div>
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id name>
+                        <option>Да</option>
+                        <option>Нет</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="field-select">
+                    <div class="field-select__name">Есть ли у вас имущество?</div>
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id name>
+                        <option>Нет</option>
+                        <option>Квартира</option>
+                        <option>Автомобиль</option>
+                        <option>Дача</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__name">Укажите на какой номер отправить расчет *</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" placeholder id name>
+                    </span>
+                  </label>
+                  <div class="field-actions">
+                    <div class="field-actions__text">* — обязательные поля</div>
+                    <button class="btn btn--main">Рассчитать и получить подарки</button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -200,21 +239,25 @@
                 </p>
               </div>
               <div class="ask__col-form">
-                <h3>Или задайте вопрос юристу через форму Это БЕСПЛАТНО</h3>
+                <h3>Или задайте вопрос юристу <br> через форму <br> Это БЕСПЛАТНО</h3>
                 <p>Юрист свяжется с вами по указанному номеру и даст рекомендации, как лучше поступить в вашей ситуации</p>
                 <form action>
                   <label class="field-text">
+                    <span class="field-text__name">Коротко опишите ситуацию*</span>
+                    <span class="field-text__input-wrap">
+                      <textarea class="field-text__input" name id cols="30" rows="3"></textarea>
+                    </span>
+                  </label>
+                  <label class="field-text">
                     <span class="field-text__name">Напишите Ваше имя</span>
                     <span class="field-text__input-wrap">
-                      <input class="field-text__input" type="text" placeholder="placeholder" id name>
-                      <span class="field-text__help-text">Пояснение</span>
+                      <input class="field-text__input" type="text" placeholder id name>
                     </span>
                   </label>
                   <label class="field-text">
                     <span class="field-text__name">Введите Ваш номер телефона *</span>
                     <span class="field-text__input-wrap">
-                      <input class="field-text__input" type="text" placeholder="placeholder" id name>
-                      <span class="field-text__help-text">Пояснение</span>
+                      <input class="field-text__input" type="text" placeholder id name>
                     </span>
                   </label>
                   <div class="field-actions">
@@ -245,7 +288,7 @@
                 <p>Кто первый подает иск тот и выбирает арбитражного управляющего!
                   А от решения управляющего зависит результат Вашего банкротства.</p>
                 <a href="#" class="btn btn--main">Получить бесплатную консультацию управляющего</a>
-                <p class="h3">Или звоните <br> <a class="tel" href="tel:+73022284296">+7 (3022) 28-42-96</a></p>
+                <p class="lead">Или звоните <br> <a class="tel" href="tel:+73022284296">+7 (3022) 28-42-96</a></p>
               </div>
             </div>
           </div>
@@ -259,19 +302,19 @@
         </section>
         <section class="instruction">
           <div class="container">
+            <div class="instruction__icon">
+              <img src="img/download-file.png" alt>
+            </div>
             <h2 class="instruction__title">Сохраните себе пошаговую инструкцию списания ваших долгов</h2>
             <div class="instruction__inner">
               <form action class="instruction__form">
                 <label class="field-text">
-                  <span class="field-text__name">Текст</span>
                   <span class="field-text__input-wrap">
-                    <input class="field-text__input" type="text" placeholder="placeholder" id name>
-                    <span class="field-text__help-text">Пояснение</span>
+                    <input class="field-text__input" type="text" placeholder="Введите телефон*" id name>
                   </span>
                 </label>
                 <div class="field-actions">
-                  <div class="field-actions__text">* — обязательные поля</div>
-                  <button class="btn">Скачать бесплатно</button>
+                  <button class="btn btn--main">Скачать бесплатно</button>
                 </div>
               </form>
             </div>
@@ -311,6 +354,22 @@
                     <li>Доказываем материальную несостоятельность</li>
                     <li>Добиваемся признания клиента Банкротом</li>
                   </ul>
+                </div>
+              </div>
+              <div class="stage__item">
+                <div class="stage-card">
+                  <div class="stage-card__icon">
+                    <img src="img/stage-card-icon.png" alt>
+                  </div>
+                  <div class="stage-card__title">С этого момента по решению суда вы полностью освобождаетесь от уплаты долгов</div>
+                  <ul>
+                    <li>Представляем интересы клиента в суде</li>
+                    <li>Доказываем материальную несостоятельность</li>
+                    <li>Добиваемся признания клиента Банкротом</li>
+                  </ul>
+                  <div class="stage-card__action">
+                    <a href="#" class="btn btn--main">ХОЧУ ПОДАТЬ НА БАНКРОТСТВО</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -511,17 +570,17 @@
                 <label class="field-text">
                   <span class="field-text__name">Ваш вопрос *</span>
                   <span class="field-text__input-wrap">
-                    <input class="field-text__input" type="text" placeholder="placeholder" id name>
+                    <input class="field-text__input" type="text" placeholder id name>
                   </span>
                 </label>
                 <label class="field-text">
                   <span class="field-text__name">Введите телефон *</span>
                   <span class="field-text__input-wrap">
-                    <input class="field-text__input" type="text" placeholder="placeholder" id name>
+                    <input class="field-text__input" type="text" placeholder id name>
                   </span>
                 </label>
                 <div class="field-actions">
-                  <button class="btn">Отправить</button>
+                  <button class="btn btn--main">Получить ответ</button>
                 </div>
               </form>
             </div>
@@ -531,7 +590,9 @@
     </div>
     <div class="page__footer-wrapper">
       <footer class="page-footer" role="contentinfo">
-        page-footer
+        <div class="container">
+          <p>© Финансовая и юридическая защита в Чите!</p>
+        </div>
       </footer>
     </div>
   </div>
