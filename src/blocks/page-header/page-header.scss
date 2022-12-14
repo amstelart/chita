@@ -30,6 +30,10 @@
       max-width: 65%;
       margin: 0;
       transition: all $transition-time;
+
+      @media (max-width: $screen-xl) {
+        font-size: 24px;
+      }
     }
 
     .header-call {

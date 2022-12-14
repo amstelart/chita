@@ -131,6 +131,22 @@
 
     .quiz-prev {
       margin-right: 15px;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 46px;
+      background-color: rgba(209, 4, 4, 0.25);
+      border: none;
+
+      &:hover,
+      &:focus {
+        background-color: rgba(209, 4, 4, 0.45);
+      }
+    }
+
+    .quiz-next {
+      height: 46px;
     }
 
     .suggestion-next {

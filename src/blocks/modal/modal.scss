@@ -135,6 +135,8 @@ $z-index-modal:               100 !default;
   }
 
   &--quiz {
+    padding-right: 0 !important;
+
     #{$block-name}__dialog {
       @media (min-width: $screen-lg) {
         width: 100%;
