@@ -145,18 +145,18 @@ $transition-time:             0.3s !default;
 
   // переключатель
 
-  &__toggler {
-    display: inline-block;
-    padding: 0;
-    background: none;
-    border: none;
+  // &__toggler {
+  //   display: inline-block;
+  //   padding: 0;
+  //   background: none;
+  //   border: none;
 
-    .no-js & {
-      display: none;
-    }
+  //   .no-js & {
+  //     display: none;
+  //   }
 
-    @media (min-width: $menu-desktop-width) {
-      display: none;
-    }
-  }
+  //   @media (min-width: $menu-desktop-width) {
+  //     display: none;
+  //   }
+  // }
 }

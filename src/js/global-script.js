@@ -1,6 +1,11 @@
 // Если на проекте jQuery
 $( document ).ready(function() {
 
+    $('.burger').click(function(event) {
+      $('.burger, .page-header__inner').toggleClass('active');
+      $('body').toggleClass('lock');
+    });
+
     // fix top-menu
     var shrinkHeader = 150;
     var head = $('.page-header');
@@ -18,9 +23,7 @@ $( document ).ready(function() {
     });
     // fix top-menu === end
 
-    $('.accordion-group').ariaAccordion({
-
-    });
+    $('.accordion-group').ariaAccordion({});
 });
 
 // Изоляция без jQuery
