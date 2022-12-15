@@ -17,6 +17,7 @@ $toggler-part-bg-color:       #000 !default;
   height: 30px;
   user-select: none;
   cursor: pointer;
+  display: none;
 
   > span {
     display: inline-block;
