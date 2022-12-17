@@ -64,7 +64,9 @@
   "addCssBefore": [
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
-    "./src/scss/functions.scss"
+    "./src/scss/functions.scss",
+    "./src/scss/functions.scss",
+    "../../node_modules/aos/dist/aos.css"
   ],
   "addCssAfter": [
     "./src/scss/print.scss"
@@ -79,6 +81,8 @@
     "./node_modules/ismobilejs/isMobile.min.js",
     "./node_modules/swipejs/build/swipe.min.js",
     "./node_modules/t-aria-accordion/dist/aria-accordion.min.js",
+    "./node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
+    "./node_modules/aos/dist/aos.js",
     "./node_modules/object-fit-images/dist/ofi.js"
   ],
   "addJsAfter": [

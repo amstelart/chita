@@ -24,6 +24,10 @@ $( document ).ready(function() {
     // fix top-menu === end
 
     $('.accordion-group').ariaAccordion({});
+
+    $(".field-phone").mask("+7(999) 999-9999");
+
+    AOS.init();
 });
 
 // Изоляция без jQuery
