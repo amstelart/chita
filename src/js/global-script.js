@@ -7,7 +7,7 @@ $( document ).ready(function() {
     });
 
     // fix top-menu
-    var shrinkHeader = 150;
+    var shrinkHeader = 120;
     var head = $('.page-header');
     var heightHeader = head.height();
     $(window).scroll(function() {
