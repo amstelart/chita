@@ -59,7 +59,8 @@
     "tooltip": [],
     "main": [],
     "accordion-group": [],
-    "component-quiz": []
+    "component-quiz": [],
+    "thanks": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
