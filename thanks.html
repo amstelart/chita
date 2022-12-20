@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Финансовая и юридическая защита в Чите</title>
+  <meta name="description" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <main role="main" class="main">
+        <section class="thanks">
+          <div class="container">
+            <div class="thanks__header">
+              <h1 class="thanks__title">Списываем долги физических лиц c 2015 года!</h1>
+            </div>
+            <div class="thanks__intro">
+              <div class="thanks__intro-caption">
+                <h2>Спасибо за обращение в компанию "Юридический центр помощи" в Чите!</h2>
+                <p>Мы перезвоним c номера <a class="tel" href="tel:+73022284296">+7 (3022) 28-42-96</a> в течение 5-10 минут в рабочее время. </p>
+                <p>Запишите наш номер, чтобы мы могли дозвониться и оказать консультацию по вашему вопросу!</p>
+              </div>
+              <div class="thanks__intro-image">
+                <img src="img/intro-img.png" alt>
+              </div>
+            </div>
+            <h2 class="thanks__row-title">Сохраните ваши бонусы!</h2>
+            <div class="thanks__row">
+              <div class="thanks__item">
+                <div class="thanks__card">
+                  <div class="thanks__card-body">
+                    <div class="thanks__card-icon">
+                      <img src="img/icon-checklist.png" alt>
+                    </div>
+                    <h5>Чек - лист</h5>
+                    <p>Как общаться c коллекторами, чтобы они перестали угрожать Вам и Вашим близким</p>
+                  </div>
+                  <div class="thanks__card-actions">
+                    <a href="#" class="btn btn--main">Скачать чек-лист</a>
+                  </div>
+                </div>
+              </div>
+              <div class="thanks__item">
+                <div class="thanks__card">
+                  <div class="thanks__card-body">
+                    <div class="thanks__card-icon">
+                      <img src="img/icon-instructions.png" alt>
+                    </div>
+                    <h5>Пошаговую инструкцию</h5>
+                    <p>и список документов для списания долгов</p>
+                  </div>
+                  <div class="thanks__card-actions">
+                    <a href="#" class="btn btn--main">Скачать инструкцию</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="container">
+          <p>© Финансовая и юридическая защита в Чите!</p>
+        </div>
+      </footer>
+    </div>
+    <div id="modal-call" class="modal" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <form action class="modal__content">
+          <div class="modal__header">
+            <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+            <h4 class="modal__title">Заполните форму, позвоним в течение 5-10 минут в рабочие дни</h4>
+          </div>
+          <div class="modal__body">
+            <label class="field-text">
+              <span class="field-text__name">Имя</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" placeholder id name>
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__name">Телефон*</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input field-phone" type="text" placeholder id name>
+              </span>
+            </label>
+          </div>
+          <div class="modal__footer">
+            <button type="button" class="btn btn--main" data-dismiss="modal">Жду звонка</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="modal-quiz" class="modal modal--quiz" tabindex="-1" role="dialog">
+      <div class="modal__dialog" role="document">
+        <div class="modal__content">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <div class="component-quiz">
+            <div class="quiz-progress">
+              <div class="quiz-progress-inner">
+                <div class="progress-loader-bar">
+                  <div class="progress-loader-bg"></div>
+                  <div class="current" data-unit="percent" data-steps="6" style="width: 10%;">
+                    <div class="progress-runner"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form action class="quiz-steps">
+              <div class="steps-wrapper">
+                <div class="step quiz-step active">
+                  <div class="step-title">Ваш трудовой статус</div>
+                  <div class="quiz-fields">
+                    <div class="field-radio quiz-field">
+                      <!-- <div class="field-radio__title">Работаю официально</div> -->
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio" checked>
+                          <span class="field-radio__name-text">Работаю официально</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">Работаю неофициально</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">Не работаю</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">Предприниматель</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">Пенсионер</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">Другое</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step quiz-step">
+                  <div class="step-title">Есть имущество записанное на Вас?(квартира, дом, машина, земля)</div>
+                  <div class="quiz-fields">
+                    <div class="field-radio quiz-field">
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio" checked>
+                          <span class="field-radio__name-text">Есть</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">Нет</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">Затрудняюсь ответить</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step quiz-step">
+                  <div class="step-title">Сумма Вашей задолженности?</div>
+                  <div class="quiz-fields">
+                    <div class="field-radio quiz-field">
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio" checked>
+                          <span class="field-radio__name-text">250 тыс. - 500 тыс. руб.</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">500 тыс. - 1млн. руб.</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">1 - 2 млн. руб.</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">Более 2 млн. руб.</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step quiz-step">
+                  <div class="step-title">Какова длительность просрочки по Вашим кредитам?</div>
+                  <div class="quiz-fields">
+                    <div class="field-radio quiz-field">
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio" checked>
+                          <span class="field-radio__name-text">Отсутствует</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">1 - 3 месяцев</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">3 месяца и более</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step quiz-step">
+                  <div class="step-title">Есть ипотека или автокредит?</div>
+                  <div class="quiz-fields">
+                    <div class="field-radio quiz-field">
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio" checked>
+                          <span class="field-radio__name-text">Нет</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">Ипотека</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">Автокредит</span>
+                        </label>
+                      </div>
+                      <div class="field-radio__input-wrap">
+                        <label class="field-radio__name">
+                          <input class="field-radio__input" type="radio" id name="demo-radio">
+                          <span class="field-radio__name-text">Ипотека и автокредит</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="step quiz-step">
+                  <div class="step-title">Укажите номер телефона чтобы получить расчет стоимости банкротства + БОНУСЫ: Купон на 3000 рублей, чек-лист и инструкцию!</div>
+                  <div class="quiz-fields">
+                    <label class="field-text quiz-field">
+                      <span class="field-text__name">Телефон*</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input field-phone" type="text" placeholder id name>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="quiz-actions">
+              <a href="#" class="btn btn--main quiz-prev">
+                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 12L3.29289 11.2929L2.58579 12L3.29289 12.7071L4 12ZM19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11V13ZM9.29289 5.29289L3.29289 11.2929L4.70711 12.7071L10.7071 6.70711L9.29289 5.29289ZM3.29289 12.7071L9.29289 18.7071L10.7071 17.2929L4.70711 11.2929L3.29289 12.7071ZM4 13H19V11H4V13Z" fill="#fff"/>
+                </svg>
+              </a>
+              <a href="#" class="btn btn--main quiz-next">Далее</a>
+              <div class="suggestion-next">или нажмите Enter</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
